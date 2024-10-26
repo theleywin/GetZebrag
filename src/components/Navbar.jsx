@@ -2,7 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
-import {Link} from "react-router-dom";
+
 
 
 const Navbar = () => {
@@ -25,20 +25,20 @@ const Navbar = () => {
                         <ul className="hidden lg:flex ml-14  space-x-12">
                             {navItems.map((item, index) => (
                                 <li key={index}>
-                                    <Link to={item.href}>{item.label}</Link>
+                                    <a href={item.href}>{item.label}</a>
                                 </li>
                             ))}
                         </ul>
                         <div className="hidden lg:flex justify-center space-x-12 items-center">
-                            <Link to="#" className="py-2 px-3 border rounded-md hover:bg-black">
+                            <a href="#" className="py-2 px-3 border rounded-md hover:bg-black">
                                 Sign In
-                            </Link>
-                            <Link
-                                to="#"
+                            </a>
+                            <a
+                                href="#"
                                 className="bg-gradient-to-r from-orange-500 to-orange-800 py-2 px-3 rounded-md hover:text-black">
 
                                 Create an account
-                            </Link>
+                            </a>
                         </div>
                         <div className="lg:hidden md:flex flex-col justify-end">
                             <button onClick={toggleNavbar}>
@@ -52,19 +52,19 @@ const Navbar = () => {
                         <ul>
                                 {navItems.map((item, index) => (
                                     <li key={index} className="py-4">
-                                        <Link to={item.href}>{item.label}</Link>
+                                        <a href={item.href}>{item.label}</a>
                                     </li>
                                 ))}
                             </ul>
                             <div className="flex space-x-6">
-                                <Link to="#" className="py-2 px-3 border rounded-md">
+                                <a href="#" className="py-2 px-3 border rounded-md">
                                     Sign In
-                                </Link>
-                                <Link
-                                    to="#"
+                                </a>
+                                <a
+                                    href="#"
                                     className="py-2 px-3 rounded-md bg-gradient-to-r from-orange-500 to-orange-800">
                                     Create an account
-                                </Link>
+                                </a>
                             </div>
                         </div>
                     )}

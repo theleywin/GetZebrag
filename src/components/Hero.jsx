@@ -1,5 +1,4 @@
 import video2 from "../assets/video2.mp4";
-import {Link} from "react-router-dom";
 
 const Hero = () => {
     return (
@@ -17,21 +16,21 @@ const Hero = () => {
                 into reality!
             </p>
             <div className="flex justify-center my-10">
-                <Link
-                    to="#"
+                <a
+                    href="#"
                     className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md hover:text-black">
                     Start for free
-                </Link>
-                <Link to="#" className="py-3 px-4 mx-3 rounded-md border hover:bg-black">
+                </a>
+                <a href="#" className="py-3 px-4 mx-3 rounded-md border hover:bg-black">
                     Documentation
-                </Link>
+                </a>
             </div>
             <div className="flex mt-10 justify-center">
                 <video
                     autoPlay
                     loop
                     muted
-                    className="rounded-lg border border-orange-700 shadow-sm shadow-orange-400 mx-2 my-4">
+                    className="rounded-lg border border-orange-700 shadow-sm shadow-orange-400 mx-20 my-4">
                     <source src={video2} type="video/mp4"/>
                     Your browser does not support the video tag.
                 </video>
