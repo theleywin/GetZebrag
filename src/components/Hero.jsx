@@ -1,4 +1,5 @@
 import video2 from "../assets/video2.mp4";
+import {Link} from "react-router-dom";
 
 const Hero = () => {
     return (
@@ -16,14 +17,14 @@ const Hero = () => {
                 into reality!
             </p>
             <div className="flex justify-center my-10">
-                <a
-                    href="#"
+                <Link
+                    to="#"
                     className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md hover:text-black">
                     Start for free
-                </a>
-                <a href="#" className="py-3 px-4 mx-3 rounded-md border hover:bg-black">
+                </Link>
+                <Link to="#" className="py-3 px-4 mx-3 rounded-md border hover:bg-black">
                     Documentation
-                </a>
+                </Link>
             </div>
             <div className="flex mt-10 justify-center">
                 <video
